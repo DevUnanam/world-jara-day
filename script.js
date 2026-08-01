@@ -68,8 +68,8 @@ function drawFlyer() {
 
   if (attendeePhoto) {
     const photoX = 540;
-    const photoY = 704;
-    const photoRadius = 154;
+    const photoY = 678;
+    const photoRadius = 132;
     const photoSize = photoRadius * 2;
 
     ctx.save();
@@ -85,12 +85,20 @@ function drawFlyer() {
 
   const name = document.getElementById("attendeeName").value.trim();
   if (name) {
+    ctx.fillStyle = "#073b25";
+    ctx.strokeStyle = "#bf8508";
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.roundRect(405, 810, 270, 70, 14);
+    ctx.fill();
+    ctx.stroke();
+
     ctx.fillStyle = "#f7f0df";
-    ctx.font = "700 40px Arial";
+    ctx.font = "700 34px Arial";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    const displayName = name.length > 28 ? `${name.slice(0, 25)}...` : name;
-    ctx.fillText(displayName.toUpperCase(), 540, 818);
+    const displayName = name.length > 15 ? `${name.slice(0, 15)}` : name;
+    ctx.fillText(displayName.toUpperCase(), 540, 845);
   }
 }
 
