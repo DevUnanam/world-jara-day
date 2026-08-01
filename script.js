@@ -67,38 +67,48 @@ function drawFlyer() {
   ctx.drawImage(template, 0, 0, canvas.width, canvas.height);
 
   if (attendeePhoto) {
-    const photoX = 540;
-    const photoY = 678;
-    const photoRadius = 132;
+    const photoX = 506
+    const photoY = 718;
+    const photoRadius = 142;
     const photoSize = photoRadius * 2;
 
     ctx.save();
     ctx.beginPath();
     ctx.arc(photoX, photoY, photoRadius, 0, Math.PI * 2);
     ctx.clip();
-    const scale = Math.max(photoSize / attendeePhoto.width, photoSize / attendeePhoto.height);
+    const photoZoom = 1.10;
+    const scale = Math.max(
+  photoSize / attendeePhoto.width,
+  photoSize / attendeePhoto.height
+) * photoZoom;
     const width = attendeePhoto.width * scale;
     const height = attendeePhoto.height * scale;
-    ctx.drawImage(attendeePhoto, photoX - width / 2, photoY - height / 2, width, height);
+    const photoOffsetY = 50;
+    ctx.drawImage(attendeePhoto, photoX - width / 2.2, photoY - height / 2.5 + photoOffsetY, width, height);
     ctx.restore();
+
+    // ctx.save();
+    // ctx.beginPath();
+    // ctx.arc(photoX, photoY, photoRadius + 5, 0, Math.PI * 2);
+    // ctx.lineWidth = 10;
+    // ctx.strokeStyle = "#f7f0df";
+    // ctx.stroke();
+    // ctx.beginPath();
+    // ctx.arc(photoX, photoY, photoRadius + 13, 0, Math.PI * 2);
+    // ctx.lineWidth = 8;
+    // ctx.strokeStyle = "#c78b08";
+    // ctx.stroke();
+    // ctx.restore();
   }
 
   const name = document.getElementById("attendeeName").value.trim();
   if (name) {
-    ctx.fillStyle = "#073b25";
-    ctx.strokeStyle = "#bf8508";
-    ctx.lineWidth = 5;
-    ctx.beginPath();
-    ctx.roundRect(405, 810, 270, 70, 14);
-    ctx.fill();
-    ctx.stroke();
-
     ctx.fillStyle = "#f7f0df";
-    ctx.font = "700 34px Arial";
+    ctx.font = "700 32px Arial";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    const displayName = name.length > 15 ? `${name.slice(0, 15)}` : name;
-    ctx.fillText(displayName.toUpperCase(), 540, 845);
+    const displayName = name.length > 20 ? `${name.slice(0, 20)}` : name;
+    ctx.fillText(displayName.toUpperCase(), 510, 880);
   }
 }
 
