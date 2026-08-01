@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 World Gyration | Kegite Club International Cross Water Hemisphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: "#063b25",
+              palm: "#0d5b36",
+              gold: "#bf8508",
+              ivory: "#f7f0df",
+              ember: "#8a1e13",
+            },
+            fontFamily: {
+              display: ["Georgia", "serif"],
+              body: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+            boxShadow: {
+              glow: "0 24px 80px rgba(6, 59, 37, .22)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(191, 133, 8, .16), transparent 32rem),
+          linear-gradient(180deg, #f9f2df 0%, #fffaf0 38%, #f2ead5 100%);
+      }
+      .hero-art {
+        background-image:
+          linear-gradient(90deg, rgba(5, 38, 24, .88), rgba(5, 38, 24, .58), rgba(5, 38, 24, .18)),
+          url("world-gyration-program.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      .texture {
+        background-image:
+          linear-gradient(rgba(255, 255, 255, .74), rgba(255, 255, 255, .74)),
+          url("world-gyration-teaser.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      .section-label { letter-spacing: .18em; }
+    </style>
+  </head>
+  <body class="font-body text-forest">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/15 bg-forest/90 text-white backdrop-blur">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="world-gyration-teaser.jpeg" alt="Kegite Club crest" class="h-11 w-11 rounded-full object-cover object-top ring-2 ring-gold" />
+          <span class="text-sm font-black uppercase leading-tight">2026 World<br />Gyration</span>
+        </a>
+        <div class="hidden items-center gap-5 text-sm font-semibold lg:flex">
+          <a href="#register" class="hover:text-gold">Register</a>
+          <a href="#hotel" class="hover:text-gold">Hotels</a>
+          <a href="#preorder" class="hover:text-gold">Pre-orders</a>
+          <a href="#outreach" class="hover:text-gold">Outreach</a>
+          <a href="#flyer" class="hover:text-gold">Flyer</a>
+          <a href="#contact" class="rounded-full bg-gold px-4 py-2 text-forest hover:bg-white">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-art min-h-screen pt-24 text-white">
+        <div class="mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-10 px-4 py-10 lg:grid-cols-[1.08fr_.92fr]">
+          <div class="max-w-3xl">
+            <p class="section-label text-xs font-black uppercase text-gold">Kegite Club International • Cross Water Hemisphere</p>
+            <h1 class="mt-5 font-display text-5xl font-black leading-none sm:text-7xl lg:text-8xl">2026 World Gyration</h1>
+            <p class="mt-5 max-w-2xl text-xl font-semibold text-ivory">A gathering of culture, movement and leadership, themed <strong class="text-gold">Redefining Kariability</strong>: The role of all I Am Karid in modern day Comradium.</p>
+            <div class="mt-8 flex flex-wrap gap-3 text-sm font-bold">
+              <span class="rounded-full border border-gold/70 bg-white/10 px-4 py-2">28-29 August, 2026</span>
+              <span class="rounded-full border border-gold/70 bg-white/10 px-4 py-2">Calabar, Cross River State</span>
+              <span class="rounded-full border border-gold/70 bg-white/10 px-4 py-2">Culture • Heritage • Outreach</span>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#register" class="rounded-full bg-gold px-6 py-3 font-black text-forest shadow-glow">Register now</a>
+              <a href="#flyer" class="rounded-full border border-white/70 px-6 py-3 font-black text-white">Create my flyer</a>
+            </div>
+          </div>
+          <div id="countdown" class="bg-ivory/95 p-5 text-forest shadow-glow">
+            <p class="section-label text-xs font-black uppercase text-ember">Countdown to opening day</p>
+            <div class="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <div class="bg-white p-4 text-center"><strong id="days" class="block text-4xl">0</strong><span class="text-xs font-bold uppercase">Days</span></div>
+              <div class="bg-white p-4 text-center"><strong id="hours" class="block text-4xl">0</strong><span class="text-xs font-bold uppercase">Hours</span></div>
+              <div class="bg-white p-4 text-center"><strong id="minutes" class="block text-4xl">0</strong><span class="text-xs font-bold uppercase">Minutes</span></div>
+              <div class="bg-white p-4 text-center"><strong id="seconds" class="block text-4xl">0</strong><span class="text-xs font-bold uppercase">Seconds</span></div>
+            </div>
+            <p class="mt-5 text-sm font-semibold">Opening activities begin Friday, 28 August 2026 at 7:00 AM with the Fitness Walk.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16">
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="border-l-4 border-gold bg-white p-6 shadow-sm"><p class="font-black">Friday, 28 August</p><p class="mt-2 text-sm">Fitness Walk, visitation to Agbangs, arrival and game night.</p></article>
+          <article class="border-l-4 border-gold bg-white p-6 shadow-sm"><p class="font-black">Saturday, 29 August</p><p class="mt-2 text-sm">Friendly football match, free medical outreach, conference and World Gyration.</p></article>
+          <article class="border-l-4 border-gold bg-white p-6 shadow-sm"><p class="font-black">Venue</p><p class="mt-2 text-sm">Main venue loading dangerously. Football and medical outreach: Calabar Municipal Council Field.</p></article>
+        </div>
+      </section>
+
+      <section id="register" class="texture py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[.95fr_1.05fr]">
+          <div>
+            <p class="section-label text-xs font-black uppercase text-ember">Registration</p>
+            <h2 class="mt-3 font-display text-4xl font-black">Secure your place at World Gyration.</h2>
+            <p class="mt-4 text-lg">Use this form to capture attendees, travel plans, shirt sizes and special needs. It is ready for connection to your preferred backend or form service.</p>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="bg-white p-5"><strong>General attendee</strong><p class="mt-2 text-sm">For members, friends, invited guests and supporters.</p></div>
+              <div class="bg-white p-5"><strong>Delegation lead</strong><p class="mt-2 text-sm">For hemispheres sending official groups.</p></div>
+            </div>
+          </div>
+          <form class="grid gap-4 bg-white p-6 shadow-glow" data-form="Registration">
+            <label class="grid gap-2 text-sm font-black">
+              Name
+              <input name="name" class="border border-forest/20 px-4 py-3 font-normal" required placeholder="Full name" />
+            </label>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="grid gap-2 text-sm font-black">
+                WhatsApp number
+                <input name="whatsapp" class="border border-forest/20 px-4 py-3 font-normal" required placeholder="Phone / WhatsApp" />
+              </label>
+              <label class="grid gap-2 text-sm font-black">
+                Email
+                <input name="email" type="email" class="border border-forest/20 px-4 py-3 font-normal" placeholder="Email address" />
+              </label>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="grid gap-2 text-sm font-black">
+                Ilya
+                <input id="ilyaInput" name="ilya" class="border border-forest/20 px-4 py-3 font-normal" placeholder="Example: Calabar" />
+              </label>
+              <label class="grid gap-2 text-sm font-black">
+                Hemisphere
+                <select name="hemisphere" class="border border-forest/20 px-4 py-3 font-normal">
+                  <option value="">Select hemisphere</option>
+                  <option>Abia</option>
+                  <option>Akwa</option>
+                  <option>Anambra</option>
+                  <option>Anamenuebonyi</option>
+                  <option>Cross Water</option>
+                  <option>Delta</option>
+                  <option>Ebonyi</option>
+                  <option>Edo</option>
+                  <option>Ekiti</option>
+                  <option>Enugu</option>
+                  <option>Kwara</option>
+                  <option>Northern</option>
+                  <option>Ogun</option>
+                  <option>Ondo</option>
+                  <option>Osun</option>
+                  <option>Oyo</option>
+                  <option>Waters</option>
+                </select>
+              </label>
+            </div>
+            <label class="grid gap-2 text-sm font-black">
+              Attendance category
+              <select name="attendance_category" class="border border-forest/20 px-4 py-3 font-normal"><option>Attendance category</option><option>Member</option><option>Guest</option><option>Sponsor</option><option>Medical volunteer</option></select>
+            </label>
+            <label class="grid gap-2 text-sm font-black">
+              Additional details
+              <textarea name="details" class="min-h-28 border border-forest/20 px-4 py-3 font-normal" placeholder="Travel details, delegation name, requests or comments"></textarea>
+            </label>
+            <button class="bg-forest px-5 py-3 font-black text-white" type="submit">Submit registration interest</button>
+            <p class="form-message hidden text-sm font-bold text-palm"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="hotel" class="mx-auto max-w-7xl px-4 py-16">
+        <div class="grid items-center gap-10 lg:grid-cols-[.95fr_1.05fr]">
+          <div>
+            <p class="section-label text-xs font-black uppercase text-ember">Hotel reservations</p>
+            <h2 class="mt-3 font-display text-4xl font-black">Reserve accommodation before arrival.</h2>
+            <p class="mt-4 text-lg">Gomays Plaza Hotel is the listed accommodation option for World Gyration attendees. Rooms are limited, so early reservation is encouraged for a comfortable event experience.</p>
+            <div class="mt-7 grid gap-4 sm:grid-cols-2">
+              <div class="bg-white p-5 shadow-sm"><strong>Hotel</strong><p class="mt-2 text-sm">Gomays Plaza Hotel</p></div>
+              <div class="bg-white p-5 shadow-sm"><strong>Address</strong><p class="mt-2 text-sm">Atekong Drive, off Marian Road, Calabar.</p></div>
+              <div class="bg-white p-5 shadow-sm">
+                <strong>Reservation contacts</strong>
+                <p class="mt-2 text-sm">09073756812<br />07037140159</p>
+                <p class="mt-4 text-sm font-bold">OR Text us on WhatsApp</p>
+                <a href="https://wa.me/qr/BU5APMTU6RYPP1" target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-black text-forest">
+                  <svg aria-hidden="true" viewBox="0 0 32 32" class="h-5 w-5 fill-current">
+                    <path d="M16.04 3C9.01 3 3.3 8.7 3.3 15.72c0 2.25.59 4.45 1.72 6.38L3.19 29l7.07-1.85a12.7 12.7 0 0 0 5.78 1.39h.01c7.02 0 12.73-5.7 12.73-12.72C28.78 8.7 23.07 3 16.04 3Zm0 23.38h-.01c-1.86 0-3.68-.5-5.27-1.44l-.38-.23-4.19 1.1 1.12-4.08-.25-.42a10.52 10.52 0 0 1-1.6-5.59c0-5.83 4.75-10.57 10.59-10.57 2.83 0 5.49 1.1 7.49 3.1a10.5 10.5 0 0 1 3.1 7.48c-.01 5.82-4.76 10.55-10.6 10.55Zm5.8-7.9c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.31-.81 1.03-.99 1.24-.18.21-.37.24-.68.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.88-1.77-2.2-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.32-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.76.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.51.26-.74.26-1.37.18-1.51-.08-.13-.29-.21-.61-.37Z" />
+                  </svg>
+                  WhatsApp
+                </a>
+              </div>
+              <div class="bg-white p-5 shadow-sm"><strong>Dates</strong><p class="mt-2 text-sm">28th and 29th August, 2026</p></div>
+            </div>
+          </div>
+          <img src="world-gyration-hotel-reservation.jpg" alt="World Gyration hotel reservation flyer for Gomays Plaza Hotel" class="w-full shadow-glow" />
+        </div>
+      </section>
+
+      <section id="preorder" class="bg-forest py-16 text-white">
+        <div class="mx-auto max-w-7xl px-4">
+          <p class="section-label text-xs font-black uppercase text-gold">Polo and hoodie pre-orders</p>
+          <div class="mt-3 grid items-center gap-10 lg:grid-cols-[.95fr_1.05fr]">
+            <div>
+              <h2 class="font-display text-4xl font-black">Official 2026 World Gyration merch pre-order is open.</h2>
+              <p class="mt-4 text-ivory">Secure your polo or hoodie early and send your payment receipt, preferred size, color and back-name details for production.</p>
+              <div class="mt-7 grid gap-4 sm:grid-cols-3">
+                <article class="bg-white/10 p-5"><strong>Green</strong><span class="mt-3 block h-8 w-8 rounded-full bg-green-700 ring-2 ring-white/60"></span></article>
+                <article class="bg-white/10 p-5"><strong>White</strong><span class="mt-3 block h-8 w-8 rounded-full bg-white ring-2 ring-white/60"></span></article>
+                <article class="bg-white/10 p-5"><strong>Brown</strong><span class="mt-3 block h-8 w-8 rounded-full bg-[#6b3f18] ring-2 ring-white/60"></span></article>
+              </div>
+              <div class="mt-6 grid gap-4 sm:grid-cols-3">
+                <article class="bg-white p-5 text-forest shadow-sm"><strong>Standard Polo</strong><p class="mt-2 text-2xl font-black text-gold">₦4,500</p></article>
+                <article class="bg-white p-5 text-forest shadow-sm"><strong>High Quality Polo</strong><p class="mt-2 text-2xl font-black text-gold">₦6,000</p></article>
+                <article class="bg-white p-5 text-forest shadow-sm"><strong>Hoodie</strong><p class="mt-2 text-2xl font-black text-gold">₦10,000</p></article>
+              </div>
+              <div class="mt-6 bg-white/10 p-6">
+                <h3 class="font-black text-gold">Payment details</h3>
+                <p class="mt-3 text-sm text-ivory">Account Number: <strong class="text-white">6190863783</strong></p>
+                <p class="mt-1 text-sm text-ivory">Account Name: <strong class="text-white">Ngozi Princess Nkpuruoma</strong></p>
+                <p class="mt-1 text-sm text-ivory">Bank: <strong class="text-white">Moniepoint MFB</strong></p>
+                <p class="mt-4 text-sm font-black text-gold">Pre-order deadline: 21st August, 2026</p>
+              </div>
+              <div class="mt-6 bg-white/10 p-6">
+                <h3 class="font-black text-gold">After payment, kindly send</h3>
+                <ul class="mt-3 space-y-2 text-sm text-ivory">
+                  <li>Your payment receipt.</li>
+                  <li>Your preferred size and color.</li>
+                  <li>The name you want printed on the back. Name must not be more than 15 letters.</li>
+                </ul>
+              </div>
+            </div>
+            <img src="world-gyration-merch-preorder.jpg" alt="2026 World Gyration polo and hoodie pre-order flyer" class="w-full shadow-glow" />
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsor" class="mx-auto max-w-7xl px-4 py-16">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div>
+            <p class="section-label text-xs font-black uppercase text-ember">Sponsorship and donations</p>
+            <h2 class="mt-3 font-display text-4xl font-black">Partner with culture, community and public health.</h2>
+            <p class="mt-4">Sponsorship supports venue logistics, medical supplies, volunteer coordination, media, hospitality and cultural programming.</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="bg-white p-5 shadow-sm"><strong>Title partner</strong><p class="mt-2 text-sm">Premium visibility across event media and venue branding.</p></div>
+            <div class="bg-white p-5 shadow-sm"><strong>Outreach partner</strong><p class="mt-2 text-sm">Support screenings, medicines and community health materials.</p></div>
+            <div class="bg-white p-5 shadow-sm"><strong>Media partner</strong><p class="mt-2 text-sm">Help carry the story across local and international channels.</p></div>
+            <div class="bg-white p-5 shadow-sm"><strong>General donations</strong><p class="mt-2 text-sm">Contribute any amount toward the success of the program.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outreach" class="bg-white py-16">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[1.05fr_.95fr]">
+          <img src="world-gyration-football.jpeg" alt="Friendly football match and free medical outreach flyer" class="w-full shadow-glow" />
+          <div>
+            <p class="section-label text-xs font-black uppercase text-ember">Medical outreach details</p>
+            <h2 class="mt-3 font-display text-4xl font-black">Free medical outreach exercise.</h2>
+            <p class="mt-4">Happening simultaneously with the friendly football match between Cross Water Hemisphere and Akwa Hemisphere.</p>
+            <ul class="mt-6 space-y-3 text-sm font-semibold">
+              <li>Venue: Calabar Municipal Council Field</li>
+              <li>Date: Saturday, 29 August 2026</li>
+              <li>Time: 8:00 AM for outreach, 9:00 AM football match</li>
+              <li>Volunteer needs: medical personnel, pharmacy support, crowd control, documentation and welfare.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="flyer" class="mx-auto max-w-7xl px-4 py-16">
+        <p class="section-label text-xs font-black uppercase text-ember">Personalized flyer generator</p>
+        <div class="mt-3 grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <h2 class="font-display text-4xl font-black">Create your “I’m Attending” confirmation flyer.</h2>
+            <div class="mt-6 grid gap-3">
+              <input id="attendeeName" class="border border-forest/20 px-4 py-3" placeholder="Name to appear on flyer" />
+              <input id="attendeePhoto" type="file" accept="image/*" class="border border-forest/20 bg-white px-4 py-3" />
+              <button id="downloadFlyer" class="bg-gold px-5 py-3 font-black text-forest">Download personalized flyer</button>
+            </div>
+          </div>
+          <canvas id="flyerCanvas" width="1080" height="1080" class="w-full max-w-xl bg-white shadow-glow"></canvas>
+        </div>
+      </section>
+
+      <section id="updates" class="bg-ivory py-16">
+        <div class="mx-auto max-w-7xl px-4">
+          <p class="section-label text-xs font-black uppercase text-ember">Event updates</p>
+          <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <article class="bg-white p-6 shadow-sm"><time class="text-xs font-black uppercase text-gold">Now open</time><h3 class="mt-2 font-black">Registration interest list</h3><p class="mt-2 text-sm">Attendees, delegations, sponsors and volunteers can submit interest through the page.</p></article>
+            <article class="bg-white p-6 shadow-sm"><time class="text-xs font-black uppercase text-gold">Program released</time><h3 class="mt-2 font-black">Two-day schedule</h3><p class="mt-2 text-sm">Fitness walk, visitation, game night, outreach, conference and World Gyration confirmed.</p></article>
+            <article class="bg-white p-6 shadow-sm"><time class="text-xs font-black uppercase text-gold">Coming soon</time><h3 class="mt-2 font-black">Main venue announcement</h3><p class="mt-2 text-sm">The full gyration venue will be published once the planning committee confirms final logistics.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-forest py-16 text-white">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-2">
+          <div>
+            <p class="section-label text-xs font-black uppercase text-gold">Contact information</p>
+            <h2 class="mt-3 font-display text-4xl font-black">Planning committee</h2>
+            <p class="mt-4 text-ivory">For registration, sponsorship, donations, hotel reservations, merch and medical outreach coordination.</p>
+          </div>
+          <div class="bg-white/10 p-6">
+            <p class="text-lg font-black">07037140159</p>
+            <p class="mt-2 text-lg font-black">09073756812</p>
+            <p class="mt-5 text-sm text-ivory">Chief Akan Iyire, Chairman Cross Water. Spiritual Anansa, Planning Committee Chairman.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
